@@ -7,6 +7,8 @@ const useStore = create((set) => ({
   setUserName: (name) => set({ userName: name }),
   increment: () => set((state) => ({ count: state.count + 1 })),
   decrement: () => set((state) => ({ count: state.count - 1 })),
+  activeSection:"about",
+  setActiveSection: (section) => set({ activeSection: section }),
 }));
 
 export default useStore;

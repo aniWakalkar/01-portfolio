@@ -1,61 +1,92 @@
-import React from 'react';
+import React from "react";
 
-function Footer() {
+const Footer = () => {
   return (
-    <footer className="py-14 bg-white text-gray-500 border-gray-400 border rounded-xl p-2 m-5">
-      <div className="flex justify-evenly items-center mx-auto">
-        <div className="pagedone-1 p-5 col-span-4 flex flex-col justify-between text-wrap">
-        <p className="font-semibold text-black mb-4">Pagedone</p>
-        <ul className="space-y-2">
-            <li className='text-wrap'>Trusted in more than 100 countries & 5 million customers. Have any query?</li>
-            <li>
-            <button 
-                type="button" 
-                className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-xl text-sm px-5 py-2.5 me-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
-            >
-                Contact us
-            </button>
-            </li>
-        </ul>
+    <footer className="relative bg-gradient-to-r from-gray-100 via-white to-gray-200 text-gray-700 py-8">
+      {/* Layer 1: Gradient Background */}
+      <div className="absolute inset-0"></div>
+
+      {/* Layer 2: Subtle Texture */}
+      <div
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: "url('https://www.transparenttextures.com/patterns/white-diamond.png')",
+        }}
+      ></div>
+
+      {/* Layer 3: Decorative Pattern */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: "url('https://www.transparenttextures.com/patterns/asfalt-light.png')",
+        }}
+      ></div>
+
+      {/* Content */}
+      <div className="relative container mx-auto px-4 text-center">
+        {/* Footer Links */}
+        <div className="mb-6 space-x-6">
+          <a
+            href="#about"
+            className="text-lg font-medium hover:text-gray-500 transition duration-200"
+          >
+            About
+          </a>
+          <a
+            href="#projects"
+            className="text-lg font-medium hover:text-gray-500 transition duration-200"
+          >
+            Projects
+          </a>
+          <a
+            href="#skills"
+            className="text-lg font-medium hover:text-gray-500 transition duration-200"
+          >
+            Skills
+          </a>
+          <a
+            href="#contact"
+            className="text-lg font-medium hover:text-gray-500 transition duration-200"
+          >
+            Contact
+          </a>
         </div>
-        <div className='pagedone'>
-            <p className='font-semibold text-black'>Pagedone</p>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Pricing</li>
-            </ul>
+
+        {/* Social Media Icons */}
+        <div className="mb-6 space-x-4">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl hover:text-gray-500 transition duration-200"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl hover:text-gray-500 transition duration-200"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl hover:text-gray-500 transition duration-200"
+          >
+            <i className="fab fa-github"></i>
+          </a>
         </div>
-        <div className='products'>
-            <p className='font-semibold text-black'>Products</p>
-            <ul>
-                <li>Figma UI System</li>
-                <li>Icons Assets</li>
-                <li>Responsive Blocks</li>
-            </ul>
-        </div>
-        <div className='support'>
-            <p className='font-semibold text-black'>Support</p>
-            <ul>
-                <li>Customer Support</li>
-                <li>Terms & Conditions</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-        <div className='subscribe'>
-            <p className='font-semibold text-black'>Subscribe</p>
-            <ul>
-                <li>Subscribe to get the latest news from us</li>
-                <li><button type="button" class="text-purple-700 border border-purple-700 bg-white hover:bg-white focus:ring-4 focus:ring-purple-300 font-medium rounded-xl text-sm px-5 py-2.5 me-2 mb-2 dark:bg-white dark:hover:bg-white dark:focus:ring-purple-800">Subscribe --</button></li>
-            </ul>
-        </div>
-      </div>
-      <hr />
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        fdfdf
+
+        {/* Copyright Text */}
+        <p className="text-sm font-light">
+          &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
+        </p>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

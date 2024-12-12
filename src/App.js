@@ -1,34 +1,19 @@
-import React from "react";
-import useStore from "./zustand/store";
-
+import React from 'react';
+import Navbar from './components/Navbar';
+import Middle from './components/Middle';
+import Footer from './components/Footer';
 const App = () => {
-  const { count, increment, decrement } = useStore();
-
-  return (
-    <>
-      <div className="h-screen w-screen flex items-center justify-center bg-gray-100">
-        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
-          <h1 className="text-2xl font-bold text-gray-800">
-            Count: <span className="text-yellow-500">{count}</span>
-          </h1>
-          <div className="flex space-x-4">
-            <button
-              onClick={increment}
-              className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:ring-2 focus:ring-green-300"
-            >
-              Increment
-            </button>
-            <button
-              onClick={decrement}
-              className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 focus:ring-2 focus:ring-red-300"
-            >
-              Decrement
-            </button>
-          </div>
+    return (
+        <>
+        <div className="font-sans px-16">
+            <Navbar />
+            <hr/>
+            <Middle />
+            {/* Add other sections/components */}
+            <Footer />
         </div>
-      </div>
-    </>
-  );
-};
+        </>
+    );
+}
 
 export default App;
