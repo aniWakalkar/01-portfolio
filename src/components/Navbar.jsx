@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-5 relative bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-500 text-white shadow-lg">
+    <header className="px-10">
       {/* Layer 1: Gradient Background */}
       <div className="absolute inset-0"></div>
 
@@ -70,6 +70,7 @@ const Navbar = () => {
           </a>
         </nav>
       </div>
+      <hr />
     </header>
   );
 };

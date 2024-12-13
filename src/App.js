@@ -1,19 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Middle from './components/Middle';
-import Footer from './components/Footer';
+import Layers from './components/Layers';
 const App = () => {
     return (
         <>
-        <div className="font-sans px-16">
-            <Navbar />
-            <hr/>
-            <Middle />
-            {/* Add other sections/components */}
-            <Footer />
-        </div>
+            <Layers/>
         </>
     );
 }
-
 export default App;
