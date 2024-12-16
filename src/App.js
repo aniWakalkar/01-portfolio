@@ -1,10 +1,11 @@
-import React from 'react';
-import Layers from './components/Layers';
+import React from "react";
+import "./App.css";
+import Layers from "./components/Layers";
 const App = () => {
-    return (
-        <>
-            <Layers/>
-        </>
-    );
-}
+  return (
+    <>
+      <Layers />
+    </>
+  );
+};
 export default App;

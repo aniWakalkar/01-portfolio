@@ -1,78 +1,17 @@
-import React from "react";
-import useStore from "../zustand/store";
+import React from 'react'
 
-const Navbar = () => {
-  // Accessing the setter function from the store
-  const setActiveSection = useStore((state) => state.setActiveSection);
-
-  // Handle section change (avoid page reload)
-  const handleSectionChange = (section, e) => {
-    e.preventDefault();  // Prevent page reload
-    setActiveSection(section);  // Set active section using the store function
-  };
-
+function Navbar() {
   return (
-    <header className="px-10">
-      {/* Layer 1: Gradient Background */}
-      <div className="absolute inset-0"></div>
+    <div className='navbar'>
+        <h2><a className='font-bold text-4xl' href="/"><b className='text-[#f04e23]'>L</b><b className='text-blue-400'>O</b><b className='text-green-400'>G</b><b className='text-white'>O</b></a></h2>
+        <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+  )
+}
 
-      {/* Layer 2: Subtle Texture */}
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage: "url('https://www.transparenttextures.com/patterns/white-diamond.png')",
-        }}
-      ></div>
-
-      {/* Layer 3: Decorative Pattern */}
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: "url('https://www.transparenttextures.com/patterns/asfalt-light.png')",
-        }}
-      ></div>
-
-      {/* Content */}
-      <div className="relative container mx-auto px-8 py-4 flex justify-between items-center pt-10">
-        {/* Logo Section */}
-        <div className="text-2xl font-bold tracking-wide">
-          MyPortfolio
-        </div>
-        {/* Navigation */}
-        <nav className="space-x-6">
-          <a
-            href="/"
-            onClick={(e) => handleSectionChange("about", e)}
-            className="text-lg font-medium hover:text-indigo-200 transition duration-200"
-          >
-            About
-          </a>
-          <a
-            href="/"
-            onClick={(e) => handleSectionChange("projects", e)}
-            className="text-lg font-medium hover:text-indigo-200 transition duration-200"
-          >
-            Projects
-          </a>
-          <a
-            href="/"
-            onClick={(e) => handleSectionChange("skills", e)}
-            className="text-lg font-medium hover:text-indigo-200 transition duration-200"
-          >
-            Skills
-          </a>
-          <a
-            href="/"
-            onClick={(e) => handleSectionChange("contact", e)}
-            className="text-lg font-medium hover:text-indigo-200 transition duration-200"
-          >
-            Contact
-          </a>
-        </nav>
-      </div>
-      <hr />
-    </header>
-  );
-};
-
-export default Navbar;
+export default Navbar
