@@ -19,7 +19,7 @@ img {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     background-color: transparent;
     z-index: 1; /* Important to get on image*/
@@ -42,8 +42,9 @@ img {
 
 .hero-header-text {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 41%;
+    width: 75%;
     transform: translate(-50%, -50%);
     /* text-align: center; */
     color: white;
@@ -55,10 +56,6 @@ img {
     margin: 0;
 }
 
-.hero-header-text h2 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
 
 .hero-header-text button {
     padding: 10px 20px;

@@ -10,10 +10,9 @@ const Layers = () => {
       <Navbar/>
       <header>
         <img src={img} alt="Five developers at work." />
-        <section class="hero-header-text">
+        <section class="hero-header-text w-[100%]">
           <h1>Aniket Wakalkar</h1>
-          <p className='text-lg'>Experienced Software Engineer skilled in software design, development, system integration, and
-          problem-solving, aiming to drive technological advancements in a dynamic organization.</p>
+          <p className='text-lg'>Experienced Software Engineer skilled in software design, development, system integration, and problem-solving, aiming to drive technological advancements in a dynamic organization.</p>
           <button className='mt-3'>Read more.</button>
         </section>
       </header>
