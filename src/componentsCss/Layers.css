@@ -1,26 +1,31 @@
 header {
-    height: 80%;
+    height: 100svh;
     width: 100%;
-    background: black;
+    /* background-image: url('../img/Home-bg-4.webp');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;  */
     overflow: hidden;
     position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-    object-fit: cover;
-    opacity: 0.4;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
 .navbar {
-    padding: 10px;
+    padding: 5px;
     position: absolute;
+    font-weight: 800;
     top: 1%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
     background-color: transparent;
     z-index: 1; /* Important to get on image*/
 }
@@ -29,25 +34,23 @@ img {
     display: flex;
     align-items: center;
     background-color: transparent;
-    justify-content: space-around;
-    border-bottom: 1px solid #f04e23;
+    justify-content: space-evenly;
 }
 .navbar li{
     background-color: transparent;
-    color: white;
+    color: black;
 }
 .navbar li:hover{
-    color: #f04e23;
+    color: red;
 }
 
 .hero-header-text {
     position: absolute;
-    top: 60%;
-    left: 41%;
-    width: 75%;
+    top: 70%;
+    left: 50%;
+    width: 90%;
     transform: translate(-50%, -50%);
     /* text-align: center; */
-    color: white;
     /* z-index: 1; */
 }
 
@@ -61,7 +64,6 @@ img {
     padding: 10px 20px;
     background-color: #f04e23;
     border: none;
-    color: white;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 5px;
@@ -71,8 +73,8 @@ img {
     background-color: #d0421d;
 }
 .footer,h3,ul,li{
-    background-color: black;
     color: white;
+    background-color: black;
     padding: 3.6px;
 }
 .footer{

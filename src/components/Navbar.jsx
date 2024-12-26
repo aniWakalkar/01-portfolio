@@ -1,17 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import the Link component from react-router-dom
+import devIcon from "../img/Icons/developer.png";
 
 function Navbar() {
   return (
     <div className='navbar'>
-        <h2><a className='font-bold text-4xl text-black ml-10' href="/">LOGO</a></h2>
-        <ul>
-        <li><a className='text-lg' href="/home">Home</a></li>
-        <li><a className='text-lg' href="/about">About</a></li>
-        <li><a className='text-lg' href="/projects">Projects</a></li>
-        <li><a className='text-lg' href="/contact">Contact</a></li>
-        </ul>
+      {/* <h2>
+        <Link className='font-bold text-4xl text-black ml-10' to="/">
+          <img src={devIcon} alt="Developer at work." className='devIcon'/> 
+        </Link>
+      </h2> */}
+      <ul>
+        <Link className='font-bold text-4xl text-black ml-10' to="/">
+          <img src={devIcon} alt="Developer at work." className='devIcon' style={{width:"50px"}}/> 
+        </Link> {/* Use Link instead of anchor */}
+        <li><Link className='text-base' to="/">Home</Link></li> {/* Use Link here as well */}
+        <li><Link className='text-base' to="/about">About</Link></li>
+        <li><Link className='text-base' to="/projects">Projects</Link></li>
+        <li><Link className='text-base' to="/contact">Contact</Link></li>
+      </ul>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
