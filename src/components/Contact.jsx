@@ -4,16 +4,20 @@ import Footer from './Footer';
 
 function Contact() {
   return (
-      <div className="main-container">
-      <header>
-        {/* <img src={img} alt="Five developers at work." /> */}
-        <section class="hero-header-text w-[100%]">
-          <h1>Lorem, ipsum dolor.r</h1>
-          <p className='text-lg'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quidem? Quibusdam alias blanditiis minus atque veritatis voluptas, corporis dolorem iste saepe odit incidunt?</p>
-          <button className='mt-3'>Read more.</button>
-        </section>
-      </header>
-      <Footer/>
+    <div className="main-container bg-gray-100 text-white">
+
+      <div id="about-me" className="flex-grow flex items-center px-6 pt-36 pb-28 bg-gray-800">
+        <div className="w-full max-w-4xl mx-auto">
+          <div className="spaceMaker h-[80svh] flex items-center justify-center">
+
+            <h3 className="text-2xl font-bold mb-6 text-black">This page will be available soon...</h3>
+          
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Section */}
+      <Footer />
     </div>
   )
 }

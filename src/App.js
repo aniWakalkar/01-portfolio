@@ -10,7 +10,7 @@ import Projects from "./components/Projects"; // Import Projects component
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+    <Navbar />
       <Routes>
         {/* Define routes for each page */}
         <Route path="/" element={<Layers />} /> {/* Home page */}

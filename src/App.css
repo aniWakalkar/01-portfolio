@@ -3,7 +3,7 @@
   margin: 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   /* font-family: 'Roboto', sans-serif; */
-  color: black;
+  /* color: black; */
 }
 
 html{
@@ -15,14 +15,14 @@ body{
 }
 
 /* Root Div */
-body div{
+/* body div{
   background-color: green;
-}
+} */
 
 /* Layers Component ---------------------------------------------- */
 
 body div div{
-  background-color: white;
+  /* background-color: black; */
   box-sizing: border-box;
 }
 

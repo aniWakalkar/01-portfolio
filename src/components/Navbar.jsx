@@ -12,7 +12,7 @@ function Navbar() {
       </h2> */}
       <ul>
         <Link className='font-bold text-4xl text-black ml-10' to="/">
-          <img src={devIcon} alt="Developer at work." className='devIcon' style={{width:"50px"}}/> 
+          <img src={devIcon} alt="Developer at work." className='devIcon bg-white p-2' style={{width:"50px", borderRadius: "15px"}}/> 
         </Link> {/* Use Link instead of anchor */}
         <li><Link className='text-base' to="/">Home</Link></li> {/* Use Link here as well */}
         <li><Link className='text-base' to="/about">About</Link></li>
