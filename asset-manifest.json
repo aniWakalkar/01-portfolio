@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/01-portfolio/static/css/main.e55c1459.css",
+    "main.js": "/01-portfolio/static/js/main.41ec9cf1.js",
+    "static/js/453.4f86bf17.chunk.js": "/01-portfolio/static/js/453.4f86bf17.chunk.js",
+    "static/media/iron-man.webp": "/01-portfolio/static/media/iron-man.113deec180235a9cd77f.webp",
+    "index.html": "/01-portfolio/index.html",
+    "main.e55c1459.css.map": "/01-portfolio/static/css/main.e55c1459.css.map",
+    "main.41ec9cf1.js.map": "/01-portfolio/static/js/main.41ec9cf1.js.map",
+    "453.4f86bf17.chunk.js.map": "/01-portfolio/static/js/453.4f86bf17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e55c1459.css",
+    "static/js/main.41ec9cf1.js"
+  ]
+}
