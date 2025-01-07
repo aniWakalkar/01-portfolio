@@ -13,10 +13,10 @@ const App = () => {
     <Navbar />
       <Routes>
         {/* Define routes for each page */}
-        <Route path="/" element={<Layers />} /> {/* Home page */}
-        <Route path="/about" element={<About />} /> {/* About page */}
-        <Route path="/projects" element={<Projects />} /> {/* Projects page */}
-        <Route path="/contact" element={<Contact />} /> {/* Contact page */}
+        <Route path="/01-portfolio" element={<Layers />} /> {/* Home page */}
+        <Route path="/01-portfolio/about" element={<About />} /> {/* About page */}
+        <Route path="/01-portfolio/projects" element={<Projects />} /> {/* Projects page */}
+        <Route path="/01-portfolio/contact" element={<Contact />} /> {/* Contact page */}
       </Routes>
     </BrowserRouter>
   );

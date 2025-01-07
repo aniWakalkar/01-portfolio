@@ -14,10 +14,10 @@ function Navbar() {
         <Link className='font-bold text-4xl text-black ml-10' to="/">
           <img src={devIcon} alt="Developer at work." className='devIcon bg-white p-2' style={{width:"50px", borderRadius: "15px"}}/> 
         </Link> {/* Use Link instead of anchor */}
-        <li><Link className='text-base' to="/">Home</Link></li> {/* Use Link here as well */}
-        <li><Link className='text-base' to="/about">About</Link></li>
-        <li><Link className='text-base' to="/projects">Projects</Link></li>
-        <li><Link className='text-base' to="/contact">Contact</Link></li>
+        <li><Link className='text-base' to="/01-portfolio">Home</Link></li> {/* Use Link here as well */}
+        <li><Link className='text-base' to="/01-portfolio/about">About</Link></li>
+        <li><Link className='text-base' to="/01-portfolio/projects">Projects</Link></li>
+        <li><Link className='text-base' to="/01-portfolio/contact">Contact</Link></li>
       </ul>
     </div>
   );
